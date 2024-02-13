@@ -7,6 +7,8 @@ import { WardView } from './components/WardView';
 import { HospitalView } from './components/HospitalView';
 import { PatientForm } from './features/patients/PatientForm';
 import { PatientDetails } from './features/patients/PatientDetails';
+import { WardForm } from './features/ward/WardForm';
+import { WardDetails } from './features/ward/WardDetails';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path='/patient/add' element={<PatientForm/>}/>
         <Route path='/patient/edit/:id' element={<PatientForm/>}/>
         <Route path='/patient/:id' element={<PatientDetails/>}/>
+        <Route path='/ward/add' element={<WardForm/>}/>
+        <Route path='/ward/edit/:id' element={<WardForm/>}/>
+        <Route path='/ward/:id' element={<WardDetails/>}/>
       </Routes>
     </div>
   );
