@@ -17,6 +17,10 @@ export const NavBar = () => {
           <NavLink to="/" style={getStyle}>patients</NavLink>
           <NavLink to="/wards"style={getStyle}>wards</NavLink>
           <NavLink to="/hospital" style={getStyle}>hospital</NavLink>
+          <NavLink to="https://github.com/bijaylaxmibehera/hospital-management-system" target="_blank" style={getStyle}>
+            frontend
+          </NavLink>
+          <NavLink to="https://replit.com/@Bijaylaxmi2117/hospital-management-api" target="_blank" style={getStyle}>backend</NavLink>
         </nav>
       </div>
     </>
