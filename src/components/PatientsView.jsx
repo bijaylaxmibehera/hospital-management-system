@@ -23,7 +23,7 @@ export const PatientsView = () => {
       ) : (
         <div>
           {status === "error" ? (
-            error
+            <p className="text-center text-xl text-red-600">{error}</p>
           ) : patients.length === 0 ? (
             <p className="text-center text-xl text-red-600">No patient found</p>
           ) : (
